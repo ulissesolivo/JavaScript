@@ -1,16 +1,312 @@
-<!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
+To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>TODO supply a title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable HTML table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <link href="TableGrid.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="TableGrid.js"></script>
   </head>
+
   <body>
-    <div>TODO write content</div>
+    <table id="grid1">
+      <thead>
+        <tr>
+          <td>Concurso</td>
+          <td>Data</td><td>D1</td><td>D2</td><td>D3</td><td>D4</td><td>D5</td><td>D6</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>11/03/1996</td><td>04</td><td>05</td><td>30</td><td>33</td><td>00:00:00</td><td>52,9</td>
+        </tr>
+        <tr>
+          <td>2</td><td>18/03/1996</td><td>09</td><td>37</td><td>39</td><td>41</td><td>08:00:00</td><td>49,7</td>
+        </tr>
+        <tr>
+          <td>3</td><td>25/03/1996</td><td>10</td><td>11</td><td>29</td><td>30</td><td>08:12:15</td><td>1.147,50</td>
+        </tr>
+        <tr>
+          <td>4</td><td>01/04/1996</td><td>01</td><td>05</td><td>06</td><td>27</td><td>08:12:00</td><td>1.247,5</td>
+        </tr>
+        <tr>
+          <td>5</td><td>08/04/1996</td><td>01</td><td>02</td><td>06</td><td>16</td><td>08:12:45</td><td>1247,500</td>
+        </tr>
+        <tr>
+          <td>6</td><td>15/04/1996</td><td>07</td><td>13</td><td>19</td><td>22</td><td>13:12:112</td><td>1147,05</td>
+        </tr>
+        <tr>
+          <td>7</td><td>22/04/1996</td><td>03</td><td>05</td><td>20</td><td>21</td><td>15:100:00</td><td>57,33</td>
+        </tr>
+        <tr>
+          <td>8</td><td>29/04/1996</td><td>04</td><td>17</td><td>37</td><td>38</td><td>66:00:00</td><td>53,05</td>
+        </tr>
+        <tr>
+          <td>9</td><td>06/05/1996</td><td>08</td><td>43</td><td>54</td><td>55</td><td>20:20:20</td><td>60</td>
+        </tr>
+        <tr>
+          <td>10</td><td>13/05/1996</td><td>04</td><td>18</td><td>21</td><td>25</td><td>23:59:59</td><td>57,25</td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <table id="grid2">
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>11/03/1996 12</td>
+          <td>04</td>
+          <td>05</td>
+          <td>30</td>
+          <td>33</td>
+          <td>41</td>
+          <td>52</td>
+          <td>Ulisses</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>11/03/1996 14</td>
+          <td>09</td>
+          <td>37</td>
+          <td>39</td>
+          <td>41</td>
+          <td>43</td>
+          <td>49</td>
+          <td>Solanage</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>11/03/1996 13</td>
+          <td>10</td>
+          <td>11</td>
+          <td>29</td>
+          <td>30</td>
+          <td>36</td>
+          <td>47</td>
+          <td>Anna</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>01/04/1996 12:12</td>
+          <td>01</td>
+          <td>05</td>
+          <td>06</td>
+          <td>27</td>
+          <td>42</td>
+          <td>59</td>
+          <td>Mariana Cristina Rambo Olivo</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>01/04/1996 12:14</td>
+          <td>01</td>
+          <td>02</td>
+          <td>06</td>
+          <td>16</td>
+          <td>19</td>
+          <td>46</td>
+          <td>ULISSES</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>01/04/1996 12:13</td>
+          <td>07</td>
+          <td>13</td>
+          <td>19</td>
+          <td>22</td>
+          <td>40</td>
+          <td>47</td>
+          <td>SOLANGE</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>22/04/1996 12:45:34</td>
+          <td>03</td>
+          <td>05</td>
+          <td>20</td>
+          <td>21</td>
+          <td>38</td>
+          <td>56</td>
+          <td>ANNA</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>22/04/1996 12:45:36</td>
+          <td>04</td>
+          <td>17</td>
+          <td>37</td>
+          <td>38</td>
+          <td>47</td>
+          <td>53</td>
+          <td>MARIANA</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>22/04/1996 12:45:35</td>
+          <td>08</td>
+          <td>43</td>
+          <td>54</td>
+          <td>55</td>
+          <td>56</td>
+          <td>60</td>
+          <td>Anna Letícia Rambo Olivo</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>22/04/1996</td>
+          <td>04</td>
+          <td>18</td>
+          <td>21</td>
+          <td>25</td>
+          <td>38</td>
+          <td>57</td>
+          <td>Mari</td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <input type="button" value="Get Linha Index" name="btnGetLinhaIndex"
+           onclick="alert(grid3.rowIndex());" />
+    <table id="grid3">
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>11/03/1996</td>
+          <td>04</td>
+          <td>05</td>
+          <td>30</td>
+          <td>33</td>
+          <td>41</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>18/03/1996</td>
+          <td>09</td>
+          <td>37</td>
+          <td>39</td>
+          <td>41</td>
+          <td>43</td>
+          <td>49</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>25/03/1996</td>
+          <td>10</td>
+          <td>11</td>
+          <td>29</td>
+          <td>30</td>
+          <td>36</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>01/04/1996</td>
+          <td>01</td>
+          <td>05</td>
+          <td>06</td>
+          <td>27</td>
+          <td>42</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>08/04/1996</td>
+          <td>01</td>
+          <td>02</td>
+          <td>06</td>
+          <td>16</td>
+          <td>19</td>
+          <td>46</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>15/04/1996</td>
+          <td>07</td>
+          <td>13</td>
+          <td>19</td>
+          <td>22</td>
+          <td>40</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>22/04/1996</td>
+          <td>03</td>
+          <td>05</td>
+          <td>20</td>
+          <td>21</td>
+          <td>38</td>
+          <td>56</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>29/04/1996</td>
+          <td>04</td>
+          <td>17</td>
+          <td>37</td>
+          <td>38</td>
+          <td>47</td>
+          <td>53</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>06/05/1996</td>
+          <td>08</td>
+          <td>43</td>
+          <td>54</td>
+          <td>55</td>
+          <td>56</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>13/05/1996</td>
+          <td>04</td>
+          <td>18</td>
+          <td>21</td>
+          <td>25</td>
+          <td>38</td>
+          <td>57</td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript">
+             var grid1 = new TableGrid();
+             //    grid1.setTitulo('tit');
+             grid1.setColumnsType(['i', 'd', 'i', 'i', 'i', 'i', 'h', 'f']);
+             //    grid1.setColumnsFilter([0, 1, 7]);
+             //    grid1.setColumnsNoWrap([1, 7]);
+             //    grid1.setColumnsWidth([40, 100, 20, 20, 20, 20, 20, 20]);
+             //    grid1.setColumnsTitle(['Sorteio', 'Data do sorteio', 'Dez1', 'Dez2', 'Dez3', 'Dez4', 'Dez5', 'Dez6']);
+             //    grid1.setColumnsClass(['right', 'center', 'center', 'center', 'center', 'center', 'center', 'right']);
+             grid1.setTable(document.getElementById('grid1'));
+             grid1.init();
+
+             var grid2 = new TableGrid();
+             grid2.setTitulo('Sorteios da mega sena');
+             grid2.setColumnsType(['i', 'd', 'i', 'i', 'i', 'i', 'i', 'i', 's']);
+             grid2.setColumnsFilter([0, 8, 1, 2, 3, 4, 5, 6, 7]);
+             grid2.setColumnsNoWrap([1, 8]);
+             grid2.setColumnsWidth([40, 100, 20, 20, 20, 20, 20, 20, 100]);
+             grid2.setColumnsTitle(['Sorteio', 'Data do sorteio', 'Dez1', 'Dez2', 'Dez3', 'Dez4', 'Dez5', 'Dez6', 'Nome']);
+             grid2.setColumnsClass(['right', 'center', 'center', 'center', 'center', 'center', 'center', 'center', 'left']);
+             grid2.setTable(document.getElementById('grid2'));
+             grid2.init();
+
+             var grid3 = new TableGrid();
+             grid3.setColumnsType(['i', 'd', 'i', 'i', 'i', 'i', 'i', 'i']);
+             grid3.setColumnsFilter([0, 6, 7]);
+             grid3.setTable(document.getElementById('grid3'));
+             grid3.init();
+
+    </script>
+    <div>
+
+    </div>
   </body>
 </html>
